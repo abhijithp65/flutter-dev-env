@@ -1,95 +1,119 @@
-Flutter Dev Environment (Docker)
+# Flutter Dev Environment (Docker)
 
+![Docker](https://img.shields.io/badge/container-ghcr.io-blue)
+![Flutter](https://img.shields.io/badge/flutter-ready-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
 
+A **Docker-based Flutter development environment** that provides a
+ready-to-use setup for building and testing Flutter applications.
 
+This container simplifies Flutter setup by providing a **preconfigured
+development environment** that works consistently across machines.
 
+------------------------------------------------------------------------
 
+## Features
 
+-   Preinstalled Flutter SDK
+-   Ubuntu-based environment
+-   Ready for Flutter commands
+-   Useful for CI/CD pipelines
+-   Reproducible development environment
+-   Works on any machine with Docker
 
+------------------------------------------------------------------------
 
-A Docker-based Flutter development environment that provides a ready-to-use setup for building and testing Flutter applications.
+## Container Image
 
-This container simplifies Flutter setup by providing a preconfigured development environment that works consistently across machines.
+The container is published on **GitHub Container Registry**.
 
-Features
-
-Preinstalled Flutter SDK
-
-Ubuntu-based environment
-
-Ready for Flutter commands
-
-Useful for CI/CD pipelines
-
-Reproducible development environment
-
-Works on any machine with Docker
-
-Container Image
-
-The container is published on GitHub Container Registry.
-
-Pull the image:
-
+``` bash
 docker pull ghcr.io/abhijithp65/flutter-dev-env:1.0
-Run the Development Environment
+```
+
+------------------------------------------------------------------------
+
+## Run the Development Environment
 
 Start the container:
 
+``` bash
 docker run -it ghcr.io/abhijithp65/flutter-dev-env:1.0
+```
 
 You will now be inside the Flutter environment.
 
-Example Commands
+------------------------------------------------------------------------
+
+## Example Commands
 
 Check Flutter installation:
 
+``` bash
 flutter doctor
+```
 
 Create a Flutter project:
 
+``` bash
 flutter create my_app
+```
 
 Run Flutter commands normally inside the container.
 
-Build the Container Locally
+------------------------------------------------------------------------
+
+## Build the Container Locally
 
 Clone the repository:
 
+``` bash
 git clone https://github.com/abhijithp65/flutter-dev-env.git
 cd flutter-dev-env
+```
 
 Build the image:
 
+``` bash
 docker build -t flutter-dev-env .
+```
 
 Run the container:
 
+``` bash
 docker run -it flutter-dev-env
-Project Structure
-flutter-dev-env
- ├── Dockerfile
- └── README.md
-Use Cases
+```
 
-This container can be used for:
+------------------------------------------------------------------------
 
-Flutter development environments
+## Project Structure
 
-CI/CD pipelines
+    flutter-dev-env
+     ├── Dockerfile
+     └── README.md
 
-Reproducible development setups
+------------------------------------------------------------------------
 
-Automated testing environments
+## Use Cases
 
-Author
+-   Flutter development environments
+-   CI/CD pipelines
+-   Reproducible development setups
+-   Automated testing environments
 
-Abhijith P
+------------------------------------------------------------------------
 
-GitHub: https://github.com/abhijithp65
+## Author
+
+**Abhijith P**
+
+GitHub: https://github.com/abhijithp65\
 
 LinkedIn: https://www.linkedin.com/in/abhijith-p-2273b6113/
 
-License
+------------------------------------------------------------------------
 
-This project is licensed under the MIT License.
+## License
+
+This project is licensed under the **MIT License**.
